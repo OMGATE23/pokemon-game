@@ -34,8 +34,8 @@ async function fetchPokemon() {
   pokemon2 = await getPokemon(randomNum[1], 1);
   printPokemon(pokemon2);
   setName(pokemon1, pokemon2);
-  pokeLabel1.innerText = pokemon1.name;
-  pokeLabel2.innerText = pokemon2.name;
+  // pokeLabel1.innerText = pokemon1.name;
+  // pokeLabel2.innerText = pokemon2.name;
   pokeImage1.src = pokemon1.image
   pokeImage2.src = pokemon2.image
 }
