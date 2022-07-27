@@ -89,8 +89,16 @@ button {
     padding: 1rem 2rem;
     margin: 1rem;
     font-size: 1rem;
-    
-    
+    color: white;
+    border-radius: 1rem;
+    background-color: var(--violet-500);
+    border: none;  
+}
+
+button:hover,
+button:focus {
+    font-weight: bold;
+    background-color: var(--violet-600);
 }
 
 .poke-input {
@@ -134,7 +142,7 @@ footer {
         margin-top: 0.5rem;
     }
 
-    button{
+    button {
         padding: 0.5rem;
     }
 
