@@ -30,10 +30,10 @@ let pokemon1, pokemon2;
 async function fetchPokemon() {
   let randomNum = getTwoRandomNum();
   pokemon1 = await getPokemon(randomNum[0], 0);
-  printPokemon(pokemon1);
+  // printPokemon(pokemon1);
 
   pokemon2 = await getPokemon(randomNum[1], 1);
-  printPokemon(pokemon2);
+  // printPokemon(pokemon2);
   setName(pokemon1, pokemon2);
   // pokeLabel1.innerText = pokemon1.name;
   // pokeLabel2.innerText = pokemon2.name;
