@@ -9,6 +9,7 @@ const pokeLabel1 = document.querySelector("#pokemon-label-1");
 const pokeLabel2 = document.querySelector("#pokemon-label-2");
 const pokeImage1 = document.querySelector("#image-1")
 const pokeImage2 = document.querySelector("#image-2")
+const OutputDivDisplay = document.querySelector(".div-output")
 
 const serverURL = "https://pokeapi.co/api/v2/pokemon/";
 
@@ -104,8 +105,11 @@ function checkQuiz(strongerPokemon) {
   for (let value of formResults.values()) {
     if (value == strongerPokemon.pid) {
       outputDivResult.innerText = "You are correct";
+      OutputDivDisplay.style.backgroundColor = "green"
+      OutputDivDisplay.style.outline = "5px solid black"
     } else {
       outputDivResult.innerText = "You are wrong";
+      OutputDivDisplay.style.backgroundColor = "red"
     }
   }
 }

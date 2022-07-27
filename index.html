@@ -4,23 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
 
-    <h1>Guess who is faster</h1>
     
-    <!-- <img src="" alt="" id="image-1"> -->
+    <header>
+        <h1>Guess who is faster</h1>
+    </header>
     
-    <!-- <img src="" alt="" id="image-2"> -->
+
     <form id="quiz-form">
-    <input type="radio" name="Pokemon" value="0" ><span id="pokemon-label-1"><img src="" alt="" id="image-1"><div id="pokemon-1"></div></span>
-    <input type="radio" name="Pokemon" value="1"><span id="pokemon-label-2"><img src="" alt="" id="image-2"><div id="pokemon-2"></div></span>
+        <div class="quiz-form-div">
+            
+            <div class="poke-div-1">
+                <img src="./images/pokeball-bg.webp" alt="" class="pokeball-bg">
+                <div class="poke-input">
+                    <input type="radio" name="Pokemon" value="0" ><span id="pokemon-label-1"><img src="" alt="" id="image-1"><div id="pokemon-1"></div></span>
+                </div>
+                
+            </div>
+        
+            <div class="poke-div-2">
+                <img src="./images/pokeball-bg.webp" alt="" class="pokeball-bg">
+                <div class="poke-input">
+                    <input type="radio" name="Pokemon" value="1"><span id="pokemon-label-2"><img src="" alt="" id="image-2"><div id="pokemon-2"></div></span>
+                </div>
+                
+            </div>
+        </div>
+        
+    
     </form>
-    <button id="fetch-button">Fetch</button>
-    <button id="check-button">Compare</button>
-    <div id="output"></div>
-    <div id="output-result"></div>
+    <div class="div-button">
+        <button id="fetch-button">Fetch</button>
+        <button id="check-button">Compare</button></div>
+    <div class="final-btn"></div>
+    
+    <div class="div-output">
+        <div id="output"></div>
+        <div id="output-result"></div>
+    </div>
+    
+
+    <footer>
+        <p>
+            Thank you for trying my project!
+        </p>
+    </footer>
     
 
     <script src="./app.js"></script>
