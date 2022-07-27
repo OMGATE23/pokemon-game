@@ -120,6 +120,7 @@ footer {
 @media (max-width: 650px) {
     .quiz-form-div {
         flex-direction: column;
+        margin-top: 0.5rem;
     }
 
     .poke-div-2 {
@@ -128,5 +129,16 @@ footer {
 
     .div-button {
         margin-top: 2rem;
+    }
+    .div-button {
+        margin-top: 0.5rem;
+    }
+
+    button{
+        padding: 0.5rem;
+    }
+
+    .div-output {
+        margin-top: 0.5rem;
     }
 }
