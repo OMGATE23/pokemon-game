@@ -63,16 +63,16 @@ function compareSpeed(pokemon1, pokemon2) {
   }
 }
 
-function printPokemon(pokemon) {
-  console.log(pokemon.name + " " + pokemon.speed);
-}
+// function printPokemon(pokemon) {
+//   console.log(pokemon.name + " " + pokemon.speed);
+// }
 
 async function getPokemon(num, pid) {
   let pokemon = fetch(getSecondServerURL(num))
     .then((resp) => resp.json())
     .then((json) => {
       speed = json.stats[5].base_stat;
-      console.log(speed);
+      // console.log(speed);
       setOutput(num, json.name);
       poke = json.name;
       image = json.sprites.front_default
