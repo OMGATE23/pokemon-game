@@ -30,10 +30,10 @@ let pokemon1, pokemon2;
 async function fetchPokemon() {
   let randomNum = getTwoRandomNum();
   pokemon1 = await getPokemon(randomNum[0], 0);
-  // printPokemon(pokemon1);
+
 
   pokemon2 = await getPokemon(randomNum[1], 1);
-  // printPokemon(pokemon2);
+
   setName(pokemon1, pokemon2);
   // pokeLabel1.innerText = pokemon1.name;
   // pokeLabel2.innerText = pokemon2.name;
@@ -49,8 +49,8 @@ async function clickHandler() {
 }
 
 function getTwoRandomNum() {
-  num1 = Math.floor(Math.random() * 100 + 1);
-  num2 = Math.floor(Math.random() * 100 + 1);
+  num1 = Math.floor(Math.random() * 150 + 1);
+  num2 = Math.floor(Math.random() * 150 + 1);
 
   return [num1, num2];
 }
@@ -63,16 +63,14 @@ function compareSpeed(pokemon1, pokemon2) {
   }
 }
 
-// function printPokemon(pokemon) {
-//   console.log(pokemon.name + " " + pokemon.speed);
-// }
+
 
 async function getPokemon(num, pid) {
   let pokemon = fetch(getSecondServerURL(num))
     .then((resp) => resp.json())
     .then((json) => {
       speed = json.stats[5].base_stat;
-      // console.log(speed);
+
       setOutput(num, json.name);
       poke = json.name;
       image = json.sprites.front_default
